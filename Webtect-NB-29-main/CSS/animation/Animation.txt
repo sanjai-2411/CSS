@@ -1,0 +1,26 @@
+Animation
+
+Syntax:
+========
+@keyframes identifier{
+    from{
+
+    }
+    to{
+
+    }
+}
+
+animation name: identifier name;
+animation duration:
+animation delay:
+animation timing function: linear, ease in ,ease out, easein out.
+Animation diection: normal, reverse, alternate, alternate-reverse;
+                (0-->100)   (100-->0)  (0-->100-->0) (100-->0-->100)
+animation iteration count: count/infinite;
+
+animation: name duration delay timing-function direction iteration-count;
+
+
+How to provide mulitiple colors ? 
+

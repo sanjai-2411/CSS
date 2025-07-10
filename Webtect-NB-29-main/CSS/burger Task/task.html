@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            height: 600px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid;
+            background-image: linear-gradient(yellow, white, yellow);
+            position: relative;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img:nth-child(1)
+        {
+            position: relative;
+            left: 20%;  
+            top: 12%;
+
+        }
+        img:nth-child(2)
+        {
+            position: relative;
+            left:100;            
+            z-index: 1;
+            
+        }
+        img:nth-child(3)
+        {
+            position: relative;
+            right: 70%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+  <img src="./Burger-removebg-preview.png" alt="" height="350px">
+  <img src="./coke-removebg-preview.png" alt="" height="530px">
+  <img src="./fries-removebg-preview.png" alt="" height="280px">
+    </section>
+  
+</body>
+</html>

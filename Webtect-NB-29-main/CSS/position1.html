@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        section{
+            height: 500px;
+            width: 500px;
+            border: solid;
+            background-color: aquamarine;
+
+        }
+
+        div{
+            height: 90px;
+            width: 90px;
+            border: solid;
+        }
+
+        div:nth-child(1)
+        {
+            background-color: black;
+            position: static;
+        }
+
+        div:nth-child(2)
+        {
+            background-color: aqua;
+            position: absolute;
+            left: 200px;
+            bottom: 350px;
+            
+        }
+        div:nth-child(3)
+        {
+            background-color: bisque;
+            position: relative;
+            left: 200px;
+        }
+
+        div:nth-child(4)
+        {
+            background-color: rgb(14, 169, 78);
+            position: fixed;
+            right: 30px;
+        }
+        div:nth-child(5)
+        {
+            background-color: cornflowerblue;
+            position: sticky;
+            
+        }
+        </style>
+</head>
+<body>
+    <section>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    </section>
+  
+</body>
+</html>

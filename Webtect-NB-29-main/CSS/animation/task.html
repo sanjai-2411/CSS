@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        section{
+            height: 600px;
+            width: 1000px;
+            border: solid;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid;
+            background-color: aqua;
+            animation-name: changeposition;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            position: absolute;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes changeposition{
+            0%{
+                background-color: red;
+                border-radius: 10%;
+                transform: translate(0px,0px);
+
+            }
+            25%{
+                background-color: red;
+                border-radius: 10%;
+                transform: translate(800px,0px);
+
+            }
+            50%{
+                background-color: green;
+                border-radius: 10px;
+                transform: translate(800px,400px);
+
+            }
+            75%{
+                background-color: darkblue;
+                border-radius: 10%;
+                transform: translate(0px,400px);
+             }
+             100%{
+                background-color: darksalmon;
+                border-radius: 10%;
+                transform: translate(0px,0px);
+                
+             }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+    </section>
+    
+</body>
+</html>

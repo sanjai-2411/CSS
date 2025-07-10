@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen  and (min-width:500px) and (max-width:700px){
+            h1::before{
+                content: "Tablet ";
+            }
+        }
+
+        @media  screen and (max-width:500px) {
+            h1{
+                background-color: #0e86ff;
+                color: black;
+            }
+            h1::before{
+                content: "Mobile ";
+            }
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+     <section>
+        <h1>Screen</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate deleniti vitae harum maxime, aliquid molestias, obcaecati quibusdam excepturi, voluptatem sequi error labore accusamus soluta delectus velit repudiandae adipisci ipsam perferendis alias exercitationem ea dolores id odio. Omnis animi quidem quo. Cumque explicabo ipsum fugit illo laborum sequi molestias necessitatibus aliquam.
+            </p>
+
+            <H2>This Is Media Query</H2>
+        
+    </section>
+</body>
+</html>

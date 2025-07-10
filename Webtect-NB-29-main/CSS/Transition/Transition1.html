@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height:100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 3s 1s linear;
+
+        }
+        section{
+            height: 900px;
+            width: 900px;
+            border: solid;
+             display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: solid;
+
+        }
+        #one:hover{
+            background-color: aqua;
+        }
+        #two:hover{
+            border-radius: 50%;
+
+        }
+        #three:hover{
+            height:20%;
+        }
+        #four:hover{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+    </section>
+</body>
+</html>

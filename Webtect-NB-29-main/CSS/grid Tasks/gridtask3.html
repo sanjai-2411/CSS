@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            height: 500px;
+            width: 500px;
+            border: solid;
+            display: grid;
+            gap: 3px;
+
+            grid-template-columns:repeat(6,auto) ;
+            grid-template-rows: repeat(6,auto);
+
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div:nth-child(1)
+        {
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 1;
+        }
+        div:nth-child(2)
+        {
+            background-color: green;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 4;
+
+        }
+        div:nth-child(3)
+        {
+            background-color: purple;
+            grid-column-start: 5;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        div:nth-child(4)
+        {
+            background-color: orange;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        div:nth-child(5)
+        {
+            background-color: orange;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            grid-column-start: 4;
+            grid-column-end: 6;
+        }
+        div:nth-child(6)
+        {
+            background-color: rgb(54, 54, 202);
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 6;
+            grid-row-end: 6;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>Header</div>
+        <div>Main-content</div>
+        <div>Sidebar</div>
+        <div>twin</div>
+        <div>twin</div>
+        <div>footer</div>
+    </section>
+</body>
+</html>

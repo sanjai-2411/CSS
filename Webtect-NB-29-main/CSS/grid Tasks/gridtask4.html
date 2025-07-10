@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            height: 600px;
+            width: 500px;
+            display: grid;
+            border: solid;
+
+            grid-template-columns: repeat(4,auto);
+            grid-template-rows: repeat(6,auto);
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid;
+        }
+
+        div:nth-child(1)
+        {
+            background-color: grey;
+            grid-row-start: 5;
+            grid-column-start: 1;
+        }
+        div:nth-child(2)
+        {
+            background-color: grey;
+            grid-row-start: 5;
+        }
+        div:nth-child(3)
+        {
+            background-color:grey ;
+            grid-row-start: 5;
+        }
+        div:nth-child(4)
+        {
+            background-color: grey;
+            grid-row-start: 4;
+        }
+        div:nth-child(5)
+        {
+            background-color: grey;
+            grid-row-start: 4;
+        }
+        div:nth-child(6)
+        {
+            background-color: grey;
+            grid-row-start: 4;
+        }
+        div:nth-child(7)
+        {
+            background-color: grey;
+            grid-row-start: 3;
+        }
+        div:nth-child(8)
+        {
+            background-color: grey;
+            grid-row-start: 3;
+        }
+        div:nth-child(9)
+        {
+            background-color: grey;
+            grid-row-start: 3;
+        }
+        div:nth-child(10)
+        {
+            background-color: grey;
+            grid-row-start: 6;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        div:nth-child(11)
+        {
+            background-color: hsl(0, 13%, 78%);
+            grid-row-start: 4;
+        }
+        div:nth-child(12)
+        {
+            background-color: hsl(0, 13%, 78%);
+        }
+        div:nth-child(13)
+        {
+            background-color: hsl(0, 13%, 78%);
+            grid-row-start: 2;
+        }
+        div:nth-child(14)
+        {
+            background-color: hsl(0, 13%, 78%);
+            grid-row-start: 2;
+            grid-column-start: 3;
+        }
+        div:nth-child(15)
+        {
+            background-color: lch(54.19% 35.2 247.3);
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+        div:nth-child(16)
+        {
+            background-color: orangered;
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        div:nth-child(17)
+        {
+            background-color: grey;
+        }
+        div:nth-child(18)
+        {
+            background-color:black ;
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div>+</div>
+        <div>-</div>
+        <div>*</div>
+        <div>/</div>
+        <div>=</div>
+        <div>AC</div>
+        <div>.</div>
+        <div>s</div>
+    </section>
+</body>
+</html>
